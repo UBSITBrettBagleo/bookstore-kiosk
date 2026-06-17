@@ -1,9 +1,17 @@
 import { Component } from '@angular/core';
+import { BookStoreService } from '../../services/book-store.service';
+import { BookCard } from '../../components/book-card/book-card';
 
 @Component({
   selector: 'app-catalog',
-  imports: [],
+  imports: [BookCard],
   templateUrl: './catalog.html',
   styleUrl: './catalog.css',
 })
-export class Catalog {}
+export class Catalog {
+
+  constructor(
+    public store: BookStoreService
+  ) {}
+
+}

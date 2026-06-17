@@ -1,1 +1,14 @@
-<p>catalog works!</p>
+<h1>Book Catalog</h1>
+
+<div class="catalog-grid">
+
+  @for (book of store.books(); track book.id) {
+
+    <app-book-card
+      [book]="book"
+      (addBook)="store.addToCart($event)">
+    </app-book-card>
+
+  }
+
+</div>
