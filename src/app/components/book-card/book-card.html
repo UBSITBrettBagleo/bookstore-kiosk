@@ -1,6 +1,8 @@
 <div class="book-card">
 
-    <div>
+    <img [src]="book.image" alt="{{ book.title }}" />
+
+    <div class="book-info">
       <h3>{{ book.title }}</h3>
   
       <p>Author: {{ book.author }}</p>
@@ -17,7 +19,7 @@
         }
       
         @else {
-          Added ✓
+          Add again ✓
         }
       
       </button>

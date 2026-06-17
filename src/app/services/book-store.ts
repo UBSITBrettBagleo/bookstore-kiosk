@@ -12,105 +12,120 @@ export class BookStoreService {
       title: 'Empire of Silence',
       author: 'Christopher Ruocchio',
       price: 350,
-      genre: 'Sci-fi, Space opera'
+      genre: 'Sci-fi, Space opera',
+      image: 'https://m.media-amazon.com/images/I/81IIc433V7L.jpg'
     },
     {
       id: 2,
       title: 'Dune',
       author: 'Frank Herbert',
       price: 420,
-      genre: 'Sci-Fi'
+      genre: 'Sci-Fi',
+      image: 'https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1555447414i/44767458.jpg'
     },
     {
       id: 3,
       title: '1984',
       author: 'George Orwell',
       price: 300,
-      genre: 'Dystopian'
+      genre: 'Dystopian',
+      image: ''
     },
     {
       id: 4,
       title: 'Red Rising',
       author: 'Pierce Brown',
       price: 480,
-      genre: 'Sci-Fi, Distopian'
+      genre: 'Sci-Fi, Distopian',
+      image: ''
     },
     {
       id: 5,
       title: 'Harry Potter',
       author: 'J.K. Rowling',
       price: 400,
-      genre: 'Fantasy, Young adult'
+      genre: 'Fantasy, Young adult',
+      image: ''
     },
     {
       id: 6,
       title: 'Project Hail Mary',
       author: 'Andy Weir',
       price: 340,
-      genre: 'Hard Sci-Fi'
+      genre: 'Hard Sci-Fi',
+      image: ''
     },
     {
       id: 7,
       title: 'World War Z',
       author: 'Max Brooks',
       price: 450,
-      genre: 'Horror, Military fiction'
+      genre: 'Horror, Military fiction',
+      image: ''
     },
     {
       id: 8,
       title: 'How to Date a Superhero (And Not Die Trying)',
       author: 'Cristina Fernandez',
       price: 250,
-      genre: 'Romance, Superhero'
+      genre: 'Romance, Superhero',
+      image: ''
     },
     {
       id: 9,
       title: 'The Hunger Games',
       author: 'Suzanne Collins',
       price: 360,
-      genre: 'Sci-Fi'
+      genre: 'Sci-Fi',
+      image: ''
     },
     {
       id: 10,
       title: 'Maze Runner',
       author: 'James Dasher',
       price: 290,
-      genre: 'Dystopian, Young adult'
+      genre: 'Dystopian, Young adult',
+      image: ''
     },
     {
       id: 11,
       title: 'Gone Girl',
       author: 'Gillian Flynn',
       price: 330,
-      genre: 'Thriller'
+      genre: 'Thriller',
+      image: ''
     },
     {
       id: 12,
       title: 'Sherlock Holes: A Study in Scarlet',
       author: 'Sir Arthur Conan Doyle',
       price: 320,
-      genre: 'Mystery'
+      genre: 'Mystery',
+      image: ''
     },
     {
       id: 13,
       title: 'The Catcher in the Rye',
       author: 'J.D. Salinger',
       price: 270,
-      genre: 'Classic'
+      genre: 'Classic',
+      image: ''
     },
     {
       id: 14,
       title: 'How to Train Your Dragon',
       author: 'Cressida Cowell',
       price: 300,
-      genre: 'Children literature'
+      genre: 'Children literature',
+      image: ''
     },
     {
       id: 15,
       title: 'The Witcher" Sword of Destiny',
       author: 'Andrzej Sapkowski',
       price: 400,
-      genre: 'High Fantasy'
+      genre: 'High Fantasy',
+      image: ''
     }
   ]);
 
