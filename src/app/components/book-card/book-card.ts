@@ -1,9 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Book } from '../../models/book.model';
 
 @Component({
   selector: 'app-book-card',
   imports: [],
   templateUrl: './book-card.html',
-  styleUrl: './book-card.css',
+  styleUrl: './book-card.css'
 })
-export class BookCard {}
+export class BookCard {
+
+  @Input() book!: Book;
+
+  @Output() addBook = new EventEmitter<Book>();
+
+  addToCart() {
+    this.addBook.emit(this.book);
+  }
+
+}
