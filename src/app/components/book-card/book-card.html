@@ -1,23 +1,25 @@
 <div class="book-card">
 
-    <h3>{{ book.title }}</h3>
+    <div>
+      <h3>{{ book.title }}</h3>
   
-    <p>
-      <strong>Author:</strong>
-      {{ book.author }}
-    </p>
+      <p>Author: {{ book.author }}</p>
   
-    <p>
-      <strong>Genre:</strong>
-      {{ book.genre }}
-    </p>
+      <p>Genre: {{ book.genre }}</p>
   
-    <p class="price">
-      ₱{{ book.price }}
-    </p>
+      <p class="price">₱{{ book.price }}</p>
+    </div>
   
     <button (click)="addToCart()">
-      Add To Cart
-    </button>
+
+        @if (!added) {
+          Add To Cart
+        }
+      
+        @else {
+          Added ✓
+        }
+      
+      </button>
   
   </div>

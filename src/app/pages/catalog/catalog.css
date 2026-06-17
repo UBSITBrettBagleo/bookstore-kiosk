@@ -1,6 +1,19 @@
-.catalog-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+.page-title {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .subtitle {
+    text-align: center;
+    margin-bottom: 25px;
+    color: gray;
+  }
+  
+  .catalog-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     padding: 20px;
+    max-width: 900px;
+    margin: auto;
   }

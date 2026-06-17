@@ -15,6 +15,12 @@ export class BookCard {
 
   addToCart() {
     this.addBook.emit(this.book);
+  
+    this.added = true;
+  
+    setTimeout(() => {
+      this.added = false;
+    }, 1000);
   }
 
 }
