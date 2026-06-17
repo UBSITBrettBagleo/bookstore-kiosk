@@ -13,11 +13,13 @@ export class BookCard {
 
   @Output() addBook = new EventEmitter<Book>();
 
+  added = false;
+
   addToCart() {
     this.addBook.emit(this.book);
-  
+
     this.added = true;
-  
+
     setTimeout(() => {
       this.added = false;
     }, 1000);
