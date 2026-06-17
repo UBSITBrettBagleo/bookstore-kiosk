@@ -114,6 +114,27 @@ export class BookStoreService {
     }
   ]);
 
+  cart = signal<Book[]>([]);
 
+  cartTotal = computed(() =>
+    this.cart().reduce(
+      (total, book) => total + book.price,
+      0
+    )
+  );
+
+  addToCart(book: Book) {
+    this.cart.update(cart => [...cart, book]);
+  }
+
+  removeFromCart(index: number) {
+    this.cart.update(cart =>
+      cart.filter((_, i) => i !== index)
+    );
+  }
+
+  clearCart() {
+    this.cart.set([]);
+  }
 
 }
