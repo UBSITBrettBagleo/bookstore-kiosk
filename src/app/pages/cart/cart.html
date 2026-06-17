@@ -1,1 +1,36 @@
-<p>cart works!</p>
+<h1>Shopping Cart</h1>
+
+@if (store.cart().length > 0) {
+
+  @for (book of store.cart(); track $index) {
+
+    <div class="cart-item">
+
+      <h3>{{ book.title }}</h3>
+
+      <p>₱{{ book.price }}</p>
+
+      <button
+        (click)="store.removeFromCart($index)">
+        Remove
+      </button>
+
+    </div>
+
+  }
+
+  <h2>
+    Total: ₱{{ store.cartTotal() }}
+  </h2>
+
+  <button
+    (click)="store.clearCart()">
+    Clear Cart
+  </button>
+
+}
+@else {
+
+  <p>Your cart is empty.</p>
+
+}

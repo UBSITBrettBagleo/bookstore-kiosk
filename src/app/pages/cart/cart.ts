@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BookStoreService } from '../../services/book-store';
 
 @Component({
   selector: 'app-cart',
@@ -6,4 +7,10 @@ import { Component } from '@angular/core';
   templateUrl: './cart.html',
   styleUrl: './cart.css',
 })
-export class Cart {}
+export class Cart {
+
+  constructor(
+    public store: BookStoreService
+  ) {}
+
+}
