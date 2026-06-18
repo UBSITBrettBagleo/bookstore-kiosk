@@ -1,1 +1,47 @@
-<p>genres works!</p>
+<h1>Browse by Genre</h1>
+
+<div class="genre-buttons">
+
+  <button (click)="selectedGenre='Fantasy'">
+    Fantasy
+  </button>
+
+  <button (click)="selectedGenre='Sci-Fi'">
+    Sci-Fi
+  </button>
+
+  <button (click)="selectedGenre='Adventure'">
+    Adventure
+  </button>
+
+  <button (click)="selectedGenre='Classic'">
+    Classic
+  </button>
+
+  <button (click)="selectedGenre='Mystery'">
+    Mystery
+  </button>
+
+  <button (click)="selectedGenre='Romance'">
+    Romance
+  </button>
+
+</div>
+
+<h2>{{ selectedGenre }}</h2>
+
+<div class="genre-list">
+
+  @for (
+    book of store.getBooksByGenre(selectedGenre);
+    track book.id
+  ) {
+
+    <app-book-card
+      [book]="book"
+      (addBook)="store.addToCart($event)">
+    </app-book-card>
+
+  }
+
+</div>
