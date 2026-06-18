@@ -1,4 +1,8 @@
+<section class="cart-container">
 <h1>Shopping Cart</h1>
+<p>Selected books are here.</p>
+</section>
+
 
 @if (store.cart().length > 0) {
 
@@ -27,10 +31,14 @@
     (click)="store.clearCart()">
     Clear Cart
   </button>
+ 
+  
 
 }
+
 @else {
-
+  <div class="cart-container">
   <p>Your cart is empty. Browse the catalog to add books.</p>
-
+</div>
 }
+

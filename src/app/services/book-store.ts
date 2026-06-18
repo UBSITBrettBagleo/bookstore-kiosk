@@ -248,12 +248,20 @@ export class BookStoreService {
       image: 'https://www.bookxcess.com/cdn/shop/products/9781785033827_1.jpg?v=1648791941'
     },
     {
-      id: 39,
+      id: 31,
       title: 'Journey to the Center of the Earth',
       author: 'Jules Verne',
       price: 320,
       genres: ['Adventure', 'Classic'],
       image: 'https://m.media-amazon.com/images/I/911A8d8aCYL._AC_UF1000,1000_QL80_.jpg'
+    },
+    {
+      id: 32,
+      title: 'The Long Walk',
+      author: 'Stephen King',
+      price: 500,
+      genres: ['Horror', 'Dystopian'],
+      image: 'https://m.media-amazon.com/images/I/81B8uLQ-nFL._AC_UF1000,1000_QL80_.jpg'
     }
   ]);
 
